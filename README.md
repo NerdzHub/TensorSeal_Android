@@ -56,6 +56,15 @@ python3 tools/tensorseal.py \
 
 `aes.c`: Lightweight, dependency-free AES-128-CTR implementation.
 
+graph LR
+A[model.tflite] -->|Python AES-128| B(model.lock)
+B -->|Assets| C[Android App]
+C -->|JNI Bridge| D{Native C++}
+D -->|Runtime Decrypt| E[RAM Buffer]
+E -->|Memory Map| F[TFLite Interpreter]
+style E fill:#f9f,stroke:#333,stroke-width:2px
+style F fill:#ccf,stroke:#333,stroke-width:2px
+
 ## ⚠️ Disclaimer
 This tool raises the bar significantly against IP theft, but no client-side protection is 100% unbreakable. 
 A determined attacker with root access and advanced reverse-engineering skills (Frida, GDB) can eventually dump memory. 
