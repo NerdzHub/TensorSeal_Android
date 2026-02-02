@@ -27,7 +27,7 @@ Standard Android AI deployment is insecure. If you place a `.tflite` file in you
 
 ### 2. Installation
 ```bash
-git clone [https://github.com/NerdzHub/TensorSeal_Android.git](https://github.com/NerdzHub/TensorSeal_Android.git)
+git clone https://github.com/NerdzHub/TensorSeal_Android.git
 cd TensorSeal
 pip install -r requirements.txt
 ```
