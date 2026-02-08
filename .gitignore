@@ -24,3 +24,4 @@ staging_temp/
 *.zip
 *.lock
 app/src/main/assets/dummy.tflite
+wwweb/service-account.json
