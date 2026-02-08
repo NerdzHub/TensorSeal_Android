@@ -16,3 +16,12 @@ local.properties
 # TensorSeal Generated Artifacts
 app/src/main/assets/*.lock
 app/src/main/cpp/SecretKey.h
+
+# --- Factory Artifacts ---
+output/
+dist/
+staging_temp/
+*.zip
+*.lock
+app/src/main/assets/dummy.tflite
+wwweb/service-account.json
